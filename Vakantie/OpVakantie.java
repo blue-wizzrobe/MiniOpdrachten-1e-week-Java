@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class OpVakantie {
     public static void main(String[] args) {
-        String sentence = "Ik ga op vakantie en neem mee...";
-        System.out.println(sentence);
+        System.out.println("Ik ga op vakantie en neem mee...");
         runGame("Gezegd is: ");
     }
 
