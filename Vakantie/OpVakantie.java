@@ -17,13 +17,11 @@ public class OpVakantie {
         if (sentence == "Gezegd is: ") {
             sentence += input;
             System.out.println(sentence);
-        } else {          
-            if (inputFirst != sentenceLast) {
-                System.out.println(input + " begint niet met een '" + String.valueOf(sentenceLast).toUpperCase() + "'");
-            } else {
-                sentence += ", " + input;
-                System.out.println(sentence);
-            }
+        } else if (inputFirst != sentenceLast){
+            System.out.println(input + " begint niet met een '" + String.valueOf(sentenceLast).toUpperCase() + "'");
+        } else {
+            sentence += ", " + input;
+            System.out.println(sentence);
         }
         System.out.println("Voer het volgende item in:");
         runGame(sentence);
